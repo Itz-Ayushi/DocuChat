@@ -31,13 +31,13 @@ Follow these steps to run the application locally.
 
 ---
 
- 1. Clone the Repository
+## 1. Clone the Repository
 
 ```bash
 git clone https://github.com/Itz-Ayushi/DocuChat.git
 ```
 
-2. Create a Virtual Environment (Recommended)
+## 2. Create a Virtual Environment (Recommended)
 
 It’s best practice to use a virtual environment to manage dependencies.
 
@@ -53,12 +53,12 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
-3. Install Dependencies
+## 3. Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Configure API Key
+## 4. Configure API Key
 
 You will need a Google Gemini API key to run the app.
 
@@ -84,7 +84,7 @@ Add your API key:
 GEMINI_API_KEY = "your_actual_api_key_here"
 ```
 
-▶️ Usage
+# ▶️ Usage
 
 Start the application:
 ```bash
@@ -105,7 +105,7 @@ Wait for the summary to appear.
 Ask questions in the chat box to query content from your documents.
 
 ---
-🧠 How It Works
+# 🧠 How It Works
 
 Ingestion: Extracts text from uploaded files.
 
@@ -119,7 +119,7 @@ Retrieval: Retrieves the most relevant chunks when you ask a question.
 
 Generation: Sends chunks + your query to Gemini, which generates an answer strictly from document context.
 
-#🤝 Contributing
+# 🤝 Contributing
 
 Contributions are welcome!
 Feel free to submit issues or pull requests to improve DocuChat.
