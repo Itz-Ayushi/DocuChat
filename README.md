@@ -16,12 +16,12 @@
 
 ## 🛠 Tech Stack
 
-**Frontend:** Streamlit  
-**LLM:** Google Gemini 1.5 Flash (`google-generativeai`)  
-**Vector Database:** ChromaDB  
-**Embeddings:** Sentence Transformers (`all-MiniLM-L6-v2`)  
-**PDF Parsing:** PyMuPDF (`fitz`)  
-**DOCX Parsing:** python-docx  
+- **Frontend:** Streamlit  
+- **LLM:** Google Gemini 1.5 Flash (`google-generativeai`)  
+- **Vector Database:** ChromaDB  
+- **Embeddings:** Sentence Transformers (`all-MiniLM-L6-v2`)  
+- **PDF Parsing:** PyMuPDF (`fitz`)  
+- **DOCX Parsing:** python-docx  
 
 ---
 
@@ -64,21 +64,21 @@ You will need a Google Gemini API key to run the app.
 
 Steps:
 
-Go to Google AI Studio and generate an API key.
+- Go to Google AI Studio and generate an API key.
 
-In the project root, create a folder named:
+- In the project root, create a folder named:
 ```bash
 .streamlit
 ```
 
 
-Inside that folder, create a file named:
+- Inside that folder, create a file named:
 ```bash
 secrets.toml
 ```
 
 
-Add your API key:
+- Add your API key:
 ```bash
 # .streamlit/secrets.toml
 GEMINI_API_KEY = "your_actual_api_key_here"
@@ -93,31 +93,31 @@ streamlit run app.py
 
 Once running:
 
-The app will open in your default browser (http://localhost:8501
+- The app will open in your default browser (http://localhost:8501
 ).
 
-Use the Upload Documents sidebar option to upload PDF/DOCX files.
+- Use the Upload Documents sidebar option to upload PDF/DOCX files.
 
-Click Process & Summarize.
+- Click Process & Summarize.
 
-Wait for the summary to appear.
+- Wait for the summary to appear.
 
-Ask questions in the chat box to query content from your documents.
+- Ask questions in the chat box to query content from your documents.
 
 ---
 ## 🧠 How It Works
 
-Ingestion: Extracts text from uploaded files.
+- **Ingestion:** Extracts text from uploaded files.
 
-Chunking: Splits text into overlapping chunks to retain context.
+- **Chunking:** Splits text into overlapping chunks to retain context.
 
-Embedding: Converts chunks into vector embeddings using all-MiniLM-L6-v2.
+- **Embedding:** Converts chunks into vector embeddings using all-MiniLM-L6-v2.
 
-Storage: Temporarily stores embeddings in an in-memory ChromaDB collection.
+- **Storage:** Temporarily stores embeddings in an in-memory ChromaDB collection.
 
-Retrieval: Retrieves the most relevant chunks when you ask a question.
+- **Retrieval:** Retrieves the most relevant chunks when you ask a question.
 
-Generation: Sends chunks + your query to Gemini, which generates an answer strictly from document context.
+- **Generation:** Sends chunks + your query to Gemini, which generates an answer strictly from document context.
 
 ## 🤝 Contributing
 
