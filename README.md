@@ -35,21 +35,28 @@ Follow these steps to run the application locally.
 
 ```bash
 git clone https://github.com/Itz-Ayushi/DocuChat.git
+```
 
 ##2. Create a Virtual Environment (Recommended)
 
 It’s best practice to use a virtual environment to manage dependencies.
 
 Windows:
+```bash
 python -m venv venv
 venv\Scripts\activate
+```
 
 macOS / Linux:
+```bash
 python3 -m venv venv
 source venv/bin/activate
+```
 
 ##3. Install Dependencies
+```bash
 pip install -r requirements.txt
+```
 
 ##4. Configure API Key
 
@@ -60,25 +67,29 @@ Steps:
 Go to Google AI Studio and generate an API key.
 
 In the project root, create a folder named:
-
+```bash
 .streamlit
+```
 
 
 Inside that folder, create a file named:
-
+```bash
 secrets.toml
+```
 
 
 Add your API key:
-
+```bash
 # .streamlit/secrets.toml
 GEMINI_API_KEY = "your_actual_api_key_here"
+```
 
 #▶️ Usage
 
 Start the application:
-
+```bash
 streamlit run app.py
+```
 
 Once running:
 
